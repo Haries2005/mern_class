@@ -1,0 +1,28 @@
+table,th,td {
+        border: 1px solid black;
+      }
+h3 { 
+    color: red;
+    text-transform: uppercase. ;
+
+}
+ol{
+    font-size: 100%;
+    color: black;
+    font-family: cursive;
+    font-weight: 900;
+   
+}
+.kongu{
+    border: 2px solid black;
+    display: inline-flex;
+
+}
+
+.c{
+    border: 2px solid black;
+    position: sticky;
+    top: 2px;
+    right: 2px;
+    background-color: cadetblue;
+}
