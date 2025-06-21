@@ -1,0 +1,9 @@
+
+div {
+  width: auto;
+  padding: 50px;
+  margin:auto;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 4px;
+}
