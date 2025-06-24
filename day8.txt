@@ -1,0 +1,295 @@
+use kec
+switched to db kec
+db.user.insertOne({name : "Jagadeeshvar S",email : "jagadeeshvars.23eie@kongu.edu", age : "20", dep : "EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685ac1744114a0cbfa8f3242')
+}
+db.user.insertMany([{name : "Moohit S",email : "moohits.23eie@kongu.edu", age : "20", dep : "EIE"},
+									{name : "Puviyarasan E",email : "puviyarasane.23eie@kongu.edu", age : "20", dep : "EIE"},
+									{name : "Mohammed Suhail F",email : "mohammedsuhailf.23eie@kongu.edu", age : "20", dep : "EIE"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('685ac2ce4114a0cbfa8f3243'),
+    '1': ObjectId('685ac2ce4114a0cbfa8f3244'),
+    '2': ObjectId('685ac2ce4114a0cbfa8f3245')
+  }
+}
+db.user.find()
+{
+  _id: ObjectId('685a272b21724a690187aae4'),
+  name: 'Haries Ragavendra S',
+  email: 'hariesragavendras.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2d58ca5afb1f402bee0b'),
+  name: 'Sree Sudhan AJ',
+  email: 'sreesudhanaj.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2e52ca5afb1f402bee0c'),
+  name: 'Sharan R',
+  email: 'sharanr.23eie@kongu.edu',
+  age: '19',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2e7cca5afb1f402bee0d'),
+  name: 'Mahibalan S',
+  email: 'mahibalans.23eie@kongu.edu',
+  age: '21',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2e91ca5afb1f402bee0e'),
+  name: 'Madhavan K',
+  email: 'madhavank.23eie@kongu.edu',
+  age: '21',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2eb2ca5afb1f402bee0f'),
+  name: 'Kowshiksharan N',
+  email: 'kowshiksharann.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2f1dca5afb1f402bee10'),
+  name: 'Thiruchudar S',
+  email: 'thiruchudars.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2fa5ca5afb1f402bee11'),
+  name: 'Mowleesh S',
+  email: 'mowleeshs.23eee@kongu.edu',
+  age: '20',
+  dep: 'EEE'
+}
+{
+  _id: ObjectId('685ac1744114a0cbfa8f3242'),
+  name: 'Jagadeeshvar S',
+  email: 'jagadeeshvars.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685ac2ce4114a0cbfa8f3243'),
+  name: 'Moohit S',
+  email: 'moohits.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685ac2ce4114a0cbfa8f3244'),
+  name: 'Puviyarasan E',
+  email: 'puviyarasane.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685ac2ce4114a0cbfa8f3245'),
+  name: 'Mohammed Suhail F',
+  email: 'mohammedsuhailf.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+db.user.findOne({name : "Moohit S"})
+{
+  _id: ObjectId('685ac2ce4114a0cbfa8f3243'),
+  name: 'Moohit S',
+  email: 'moohits.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+db.user.find().sort({name : 1})
+{
+  _id: ObjectId('685a272b21724a690187aae4'),
+  name: 'Haries Ragavendra S',
+  email: 'hariesragavendras.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685ac1744114a0cbfa8f3242'),
+  name: 'Jagadeeshvar S',
+  email: 'jagadeeshvars.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2eb2ca5afb1f402bee0f'),
+  name: 'Kowshiksharan N',
+  email: 'kowshiksharann.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2e91ca5afb1f402bee0e'),
+  name: 'Madhavan K',
+  email: 'madhavank.23eie@kongu.edu',
+  age: '21',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2e7cca5afb1f402bee0d'),
+  name: 'Mahibalan S',
+  email: 'mahibalans.23eie@kongu.edu',
+  age: '21',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685ac2ce4114a0cbfa8f3245'),
+  name: 'Mohammed Suhail F',
+  email: 'mohammedsuhailf.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685ac2ce4114a0cbfa8f3243'),
+  name: 'Moohit S',
+  email: 'moohits.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2fa5ca5afb1f402bee11'),
+  name: 'Mowleesh S',
+  email: 'mowleeshs.23eee@kongu.edu',
+  age: '20',
+  dep: 'EEE'
+}
+{
+  _id: ObjectId('685ac2ce4114a0cbfa8f3244'),
+  name: 'Puviyarasan E',
+  email: 'puviyarasane.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2e52ca5afb1f402bee0c'),
+  name: 'Sharan R',
+  email: 'sharanr.23eie@kongu.edu',
+  age: '19',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2d58ca5afb1f402bee0b'),
+  name: 'Sree Sudhan AJ',
+  email: 'sreesudhanaj.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2f1dca5afb1f402bee10'),
+  name: 'Thiruchudar S',
+  email: 'thiruchudars.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+db.user.find({ age : "20"})
+{
+  _id: ObjectId('685a272b21724a690187aae4'),
+  name: 'Haries Ragavendra S',
+  email: 'hariesragavendras.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2d58ca5afb1f402bee0b'),
+  name: 'Sree Sudhan AJ',
+  email: 'sreesudhanaj.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2eb2ca5afb1f402bee0f'),
+  name: 'Kowshiksharan N',
+  email: 'kowshiksharann.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2f1dca5afb1f402bee10'),
+  name: 'Thiruchudar S',
+  email: 'thiruchudars.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685a2fa5ca5afb1f402bee11'),
+  name: 'Mowleesh S',
+  email: 'mowleeshs.23eee@kongu.edu',
+  age: '20',
+  dep: 'EEE'
+}
+{
+  _id: ObjectId('685ac1744114a0cbfa8f3242'),
+  name: 'Jagadeeshvar S',
+  email: 'jagadeeshvars.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685ac2ce4114a0cbfa8f3243'),
+  name: 'Moohit S',
+  email: 'moohits.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685ac2ce4114a0cbfa8f3244'),
+  name: 'Puviyarasan E',
+  email: 'puviyarasane.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+{
+  _id: ObjectId('685ac2ce4114a0cbfa8f3245'),
+  name: 'Mohammed Suhail F',
+  email: 'mohammedsuhailf.23eie@kongu.edu',
+  age: '20',
+  dep: 'EIE'
+}
+db.user.updateOne(
+  {name : "Thiruchudar S"},
+  {$set:{email : "thiru2@gmail.com"}}
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.user.updateMany(
+	{},
+  {$set : {gender : "Male"}}
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 12,
+  modifiedCount: 12,
+  upsertedCount: 0
+}
+db.user.deleteOne({name : "Thiruchudar S"})
+{
+  acknowledged: true,
+  deletedCount: 1
+}
+db.user.deleteMany({dep : {$ne : "EIE"}})
+{
+  acknowledged: true,
+  deletedCount: 1
+}
+kec
+Selection deleted
+
